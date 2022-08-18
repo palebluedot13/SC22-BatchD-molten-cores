@@ -113,5 +113,5 @@
 {"cell_type":"markdown","id":"fd13cf","input":"Additionally, functions can take in one or multiple values to use in their code, as we can see below.","pos":65,"type":"cell"}
 {"cell_type":"markdown","id":"fe8bd8","input":"Now its your turn! You can either work on each of the following challenges in teams of 2 or walk through each one as a group. In any case, it is recommended to look at them at a high level together so that everyone understands the concepts in each section.","pos":71,"type":"cell"}
 {"cell_type":"markdown","id":"ff3c4d","input":"In the block below, create a function that takes in a list and prints out each element 1 at a time. For example, if the input was ['Dog', 'Cat', 'Hamster'], the output should be\n\nDog\n\nCat\n\nHamster\n\n","pos":79,"type":"cell"}
-{"id":0,"time":1660057453280,"type":"user"}
-{"last_load":1660057450618,"type":"file"}
+{"id":0,"time":1660315719667,"type":"user"}
+{"last_load":1660315718268,"type":"file"}

@@ -1,4 +1,4 @@
-{"backend_state":"ready","kernel":"python3-ubuntu","kernel_state":"idle","kernel_usage":{"cpu":0,"memory":0},"metadata":{"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.8.8"}},"type":"settings"}
+{"backend_state":"init","kernel":"python3-ubuntu","kernel_state":"idle","kernel_usage":{"cpu":0,"memory":0},"metadata":{"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.8.8"}},"type":"settings"}
 {"cell_type":"code","exec_count":0,"id":"666ee6","input":"","pos":69,"type":"cell"}
 {"cell_type":"code","exec_count":0,"id":"99f15f","input":"tuition.info()","metadata":{"vscode":{"languageId":"plaintext"}},"pos":18,"type":"cell"}
 {"cell_type":"code","exec_count":1,"id":"3d8b91","input":"","pos":5,"type":"cell"}
@@ -69,5 +69,5 @@
 {"cell_type":"markdown","id":"ed1254","input":"One of my favorite ways to investigate a dataframe is by using highlighting. <br> Here is a quick example of how to highlight based on how the value compares to the average. <br>\nThese functions are a bit confusing because they are meant to be used by the pandas Apply function. <br> Read more here: https://www.datacamp.com/community/tutorials/pandas-apply <br> It is a way to check each row and do 'something' based on some values.","pos":54,"type":"cell"}
 {"cell_type":"markdown","id":"ed2013","input":"We can see that there are a few state_codes that don't have state names, we can manually add those.\n<br>We'll make a function for this and add it to the top.","pos":26,"type":"cell"}
 {"cell_type":"markdown","id":"f292eb","input":"## Exploring Our Data <a class=\"anchor\" id=\"Explore\"></a>\n- Here is where we want to inform ourselves on the nitty gritty of what information our data actually holds\n- How much, what type, is there anything missing, what columns do I need & not need, etc. ","pos":10,"type":"cell"}
-{"id":0,"time":1660152288335,"type":"user"}
+{"id":0,"time":1660229896982,"type":"user"}
 {"last_load":1660152287232,"type":"file"}

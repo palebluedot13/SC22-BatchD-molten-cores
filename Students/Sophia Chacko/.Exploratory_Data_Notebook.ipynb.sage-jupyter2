@@ -1,4 +1,4 @@
-{"backend_state":"ready","kernel":"python3-ubuntu","kernel_state":"idle","kernel_usage":{"cpu":0,"memory":0},"metadata":{"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.8.8"}},"type":"settings"}
+{"backend_state":"init","kernel":"python3-ubuntu","kernel_state":"idle","kernel_usage":{"cpu":0,"memory":0},"metadata":{"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.8.8"}},"type":"settings"}
 {"cell_type":"code","exec_count":0,"id":"0a28c2","input":"","pos":69,"type":"cell"}
 {"cell_type":"code","exec_count":0,"id":"50d542","input":"tuition.info()","metadata":{"vscode":{"languageId":"plaintext"}},"pos":18,"type":"cell"}
 {"cell_type":"code","exec_count":1,"id":"856980","input":"","pos":5,"type":"cell"}
@@ -69,5 +69,5 @@
 {"cell_type":"markdown","id":"da54b7","input":"After searching Manually, Northwestern College is in Iowa & Sterling College is in Kansas. <br> This shows the importance of double checking your data. <br> I will drop the 'state column' as the 'state_name' column is the accurate one and state_code is unnecessary.","pos":43,"type":"cell"}
 {"cell_type":"markdown","id":"e1a499","input":"We don't need to stay with just the data we have been given, we can combine columns or do additional calculations on them. <br> One example is say we want to get the average 4 year cost of tuition, we can create those columns as well (and a few others)","pos":50,"type":"cell"}
 {"cell_type":"markdown","id":"eaa0c4","input":"### Import Packages and Define Functions <a class=\"anchor\" id=\"Import\"></a>\n##### You should have a section that imports necessary packages and defines any functions at the top of every notebook, anyone know why?","pos":2,"type":"cell"}
-{"id":0,"time":1660152516916,"type":"user"}
+{"id":0,"time":1660228859613,"type":"user"}
 {"last_load":1660152516661,"type":"file"}

@@ -1,0 +1,10 @@
+{"backend_state":"running","connection_file":"/projects/803caf18-2f52-4012-a187-684798bd4465/.local/share/jupyter/runtime/kernel-65830978-62b2-4c28-bdfa-8ec1771de40b.json","kernel":"ds_env","kernel_error":"","kernel_state":"idle","trust":true,"type":"settings"}
+{"id":"4acaa8","input":"","pos":0,"state":"done","type":"cell"}
+{"id":"5b3aed","input":"","pos":-2,"type":"cell"}
+{"id":"87bf5b","input":"","pos":-1,"type":"cell"}
+{"id":"b0f982","input":"","pos":-3,"type":"cell"}
+{"id":"c3cc68","input":"import pandas as pd\n","pos":-7,"type":"cell"}
+{"id":"c62521","input":"","pos":-5,"type":"cell"}
+{"id":"e678d9","input":"","pos":-4,"type":"cell"}
+{"id":0,"time":1660671646837,"type":"user"}
+{"last_load":1660671620349,"type":"file"}

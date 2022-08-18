@@ -38,7 +38,7 @@
 {"cell_type":"markdown","id":"1ebe72","input":"**TODO:** Create a scatter plot using plotly. Please add a title here!\n\nMaybe google \"Scatter plots in plotly python\" to start!\n\n","pos":47,"type":"cell"}
 {"cell_type":"markdown","id":"22867e","input":"### Creating Beautiful Visualizations with Plotly\n\nSo far, it looks like a scatter plot might be our best bet! Now we want to make a beautiful scatter plot using `plotly.`Just like pandas and numpy, plotly is a module that lets us create beautiful visualizations in just a few lines of code. \n\nI'm only going to help with the import, so I need you to spend time on plotly's documentation in order to build the same scatter plot you did in the last section, but nicer. Maybe google \"Scatter plots in plotly python\" to start!\n\n","pos":45,"type":"cell"}
 {"cell_type":"markdown","id":"22ec05","input":"**TODO: Create a histogram of another column of your choice below.**\n","pos":39,"type":"cell"}
-{"cell_type":"markdown","id":"28dee0","input":"**TODO:** Can you run the .head\\(\\) and .tail\\(\\) function on our new dataframe? Can you print the name of all the columns in our dataframe? How about the number of rows?\n","pos":6,"type":"cell"}
+{"cell_type":"markdown","id":"28dee0","input":"**TODO:** Can you run the .head\\(\\) and .tail\\(\\) function on our new dataframe? Can you print the name of all the columns in our dataframe? How about the number of rows?\n\n","pos":6,"type":"cell"}
 {"cell_type":"markdown","id":"305bc7","input":"### Step 2: Do your research\n\nWhat do the column names mean? At this point you should look up the meanings of any columns you don't know about and make some comments below. \n\nTypically at this point we would read up on the domain we are performing data analysis on. To do research on penguins you should probably get to know something about penguins!\n\n","pos":12,"type":"cell"}
 {"cell_type":"markdown","id":"379a48","input":"# Welcome to your first EDA \\(Exploratory Data Analysis\\)\n\n","pos":0,"type":"cell"}
 {"cell_type":"markdown","id":"3acacd","input":"#### Getting Rid of N/A's\n\nI see lots of N/A's, which we typically cannot visualize or use in machine learning.\nNow, I want to get rid of all the rows that have NA's in them. I'll show you how. **TODO:** Can you print the number of rows our dataframe has after I drop the NAs?\n\n","pos":18,"type":"cell"}
@@ -57,5 +57,5 @@
 {"cell_type":"markdown","id":"ef95f6","input":"Conditions in pandas work just like `if` statements in python. \n\n**TODO: Can you tell me which species of penguin can have a flipper length greater than or equal to 230 by using conditions in pandas?**\n\n","pos":29,"type":"cell"}
 {"cell_type":"raw","id":"39a257","input":"Write up some descriptions for your findings here....\n\n\n\n\n","pos":56,"type":"cell"}
 {"cell_type":"raw","id":"d6f3c2","input":"What do these columns mean?\n\n\n\n\n\n\n","pos":13,"type":"cell"}
-{"id":0,"time":1660068310501,"type":"user"}
-{"last_load":1660140187684,"type":"file"}
+{"id":0,"time":1660757568186,"type":"user"}
+{"last_load":1660774315341,"type":"file"}

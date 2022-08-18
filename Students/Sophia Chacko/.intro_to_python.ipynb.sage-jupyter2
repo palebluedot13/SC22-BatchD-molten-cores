@@ -107,5 +107,5 @@
 {"cell_type":"markdown","id":"ec8df0","input":"Functions act like variables but instead of storing a value, they store lines of code. Below we can see how a function is created and used.\n\n","pos":60,"type":"cell"}
 {"cell_type":"markdown","id":"f2282f","input":"Additionally, we can use elif statements to add additional conditions to the structure.\n\n","pos":50,"type":"cell"}
 {"cell_type":"markdown","id":"f44d22","input":"Additionally, functions can take in one or multiple values to use in their code, as we can see below.\n\n","pos":64,"type":"cell"}
-{"id":0,"time":1660065984320,"type":"user"}
-{"last_load":1660140189392,"type":"file"}
+{"id":0,"time":1660584309483,"type":"user"}
+{"last_load":1660582722614,"type":"file"}

@@ -58,5 +58,5 @@
 {"cell_type":"markdown","id":"dfaeb6","input":"### Exploring the Data\n\nPandas has some amazing tools for exploring your data. Since this is a **mini** project, we will walk through only a few key features of pandas exploration. You can expect to do lots of research on your own to best explore, clean, and visualize your data for your project. \n\nFirst we will learn how to access certain columns of data and use conditions to get subsets of data.\n\n","pos":22,"type":"cell"}
 {"cell_type":"raw","id":"015f4c","input":"Write up some descriptions for your findings here....\nPenguins are beautiful and my favorite penguin is the Alleli? Penguin\nThey seem so feirce even though their small.\nI want to have that attitude as well. I may be tiny but that doesn't mean I'm not strong\n\n\n\n","pos":57,"type":"cell"}
 {"cell_type":"raw","id":"9efc6f","input":"What do these columns mean?\n\n\nColumns I think they mean a \n\n\n\n","pos":13,"type":"cell"}
-{"id":0,"time":1660142132137,"type":"user"}
-{"last_load":1660140190402,"type":"file"}
+{"id":0,"time":1660661070227,"type":"user"}
+{"last_load":1660661070519,"type":"file"}
