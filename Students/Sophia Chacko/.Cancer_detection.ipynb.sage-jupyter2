@@ -68,5 +68,5 @@
 {"cell_type":"markdown","id":"f4ba6f","input":"**The last step!!** We need to change parameters and data to improve our model as we go. If we can make even 1 more correct cancer prediction, it is worth it, right? \n\n**TODO:** Go back and change the value of `k` in the **creating your model object** section and re-run all the code below it. See what changes with your MSE and confusion matrix!\n\n","metadata":{"id":"tbo3cueVq7EV"},"pos":55,"type":"cell"}
 {"cell_type":"markdown","id":"f82dbd","input":"**TODO:** Now that our outcome column is there, we need to remove the diagnosis column that had the bad data, right? Please do so below.\n\n","metadata":{"id":"kXUk3fFs5VxV"},"pos":23,"type":"cell"}
 {"cell_type":"markdown","id":"ff66f2","input":"### Visualize our data\n\nNow that we've cleaned our data and it is all ready for our model, we should understand some of the relationships. Use your learnings from last week to create two plots -- you can always start with simple [scatter plots](https://plotly.com/python/line-and-scatter/) or maybe a [scatterplot matrix](https://plotly.com/python/splom/). Get creative!\n\n","metadata":{"id":"jhMq9yAj3x78"},"pos":25,"type":"cell"}
-{"id":0,"time":1660757557310,"type":"user"}
-{"last_load":1660771728073,"type":"file"}
+{"id":0,"time":1660925265312,"type":"user"}
+{"last_load":1660921456686,"type":"file"}

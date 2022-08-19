@@ -73,5 +73,5 @@
 {"cell_type":"markdown","id":"cbb708","input":"Do you remember how to fit a model? What parts of our data do we fit/train on? You can go look at the section above for inspiration.","metadata":{"id":"Bk4rua0er_QF"},"pos":56,"type":"cell"}
 {"cell_type":"markdown","id":"d25696","input":"### Step 2: Do Your Research\nThat is a ton of columns. That is a ton of data! Where do we start? \n\nYou should probably do some research on this dataset to find out what the columns mean. I got it on kaggle - you can read about it here: [Wisconsin Breast Cancer Dataset](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data).\n","metadata":{"id":"XjS_4CFYxx52"},"pos":11,"type":"cell"}
 {"cell_type":"markdown","id":"f88fb3","input":"**TODO:** Do you remember how to print the first five rows of a pandas dataframe? How about all of the columns? How about the number of rows? Please do that below and google anything you are unsure about. ","metadata":{"id":"rdwjqFR8xdE2"},"pos":4,"type":"cell"}
-{"id":0,"time":1660746220123,"type":"user"}
-{"last_load":1660759821720,"type":"file"}
+{"id":0,"time":1660832938028,"type":"user"}
+{"last_load":1660843461923,"type":"file"}

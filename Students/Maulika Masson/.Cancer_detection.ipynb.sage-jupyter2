@@ -75,5 +75,5 @@
 {"cell_type":"markdown","id":"f792e3","input":"**TODO:** Now that our outcome column is there, we need to remove the diagnosis column that had the bad data, right? Please do so below.\n","metadata":{"id":"kXUk3fFs5VxV"},"pos":22,"type":"cell"}
 {"cell_type":"markdown","id":"f812ea","input":"Now create some predictions and set them equal to `y_hat`. You can look above or google how to make predictions on sklearn if you get confused!","metadata":{"id":"4oAExynzsveF"},"pos":57,"type":"cell"}
 {"cell_type":"markdown","id":"ff5f7c","input":"Step 2 - Evaluation: Here we want to compare `y_hat` to `y_test`. Discuss with your team about why we should do this. \n\nOne we we can compare them is visual inspection. With that said, would you recommend going through by hand and making a tally for every time the one's and zero's don't match up?\n\nPlease don't do this. Please save yourself this nasty headache when we can just do math. Below is a common way to do this, called mean squared error. \n\nTo get mean squared error, we compute the difference between each element in `y_hat` and `y_test` and square it and then get the average of all of that to see how far off we are.","metadata":{"id":"SbywAxezkRN8"},"pos":47,"type":"cell"}
-{"id":0,"time":1660746893651,"type":"user"}
-{"last_load":1660755895309,"type":"file"}
+{"id":0,"time":1660923645612,"type":"user"}
+{"last_load":1660923644076,"type":"file"}
