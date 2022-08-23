@@ -101,5 +101,5 @@
 {"cell_type":"markdown","id":"fba045","input":"Pandas works with objects called **DataFrames**. Not sure what that is? Read the docs: [https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html.](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html)\n\nOr you can simply look below.\n","pos":87,"type":"cell"}
 {"cell_type":"markdown","id":"fbff5c","input":"We can add else statements to the above. An else statement is what will be run if the original statement is false.","pos":44,"type":"cell"}
 {"cell_type":"markdown","id":"fdc5f4","input":"You can also get various details about the dataframe with the following functions.\n","pos":94,"type":"cell"}
-{"id":0,"time":1660835591188,"type":"user"}
-{"last_load":1660831245533,"type":"file"}
+{"id":0,"time":1661179143934,"type":"user"}
+{"last_load":1661179142867,"type":"file"}
