@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title style = "color: #2cbcca;">Molten Cores</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+      
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top" style="background-color: #51307f;">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Molten Cores</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about" style = "color: #2cbcca;">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#visuals" style = "color: #2cbcca;">Visuals</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#ourproject" style = "color: #2cbcca;">Our Project</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#meettheteam" style = "color: #2cbcca;">Meet the Team</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase" style = "color: #2cbcca;">Suicide Attempt Prediction</h1>
+                      <h1 class="mx-auto my-0 text-uppercase" style = "color: #2cbcca;">
+                          {%if image_flag%}
+       This is the prediction: 
+       {{classification_text}}
+                        
+                                 {% endif %}
+                      </h1>
+                      <h2 class="text-white-50 mx-auto mt-2 mb-5" style = "color: #2cbcca;">Using existing data to predict if someone may by at risk of attempting suicide.</h2>
+                        <a class="btn btn-primary" href="#about" style = "color: #2cbcca;">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+<form method = "post" style = "color: #2cbcca;>
+  <label for="gender">Gender:</label><br>
+  <input type="text" id="gender" name="gender" style = "color: #2cbcca;"><br>
+  <label for="sexuality">Sexuality:</label><br>
+  <input type="text" id="sexuallity" name="sexuallity" style = "color: #2cbcca;"><br>
+  <label for="age">Age:</label><br>
+  <input type="text" id="age" name="age" style = "color: #2cbcca;"><br>
+  <label for="income">Income:</label><br>
+  <input type="text" id="income" name="income" style = "color: #2cbcca;"><br>
+  <label for="race">Race:</label><br>
+  <input type="text" id="race" name="race"><br>
+  <label for="bodyweight">Bodyweight:</label><br>
+  <input type="text" id="bodyweight" name="bodyweight"><br>
+  <label for="virgin">Virgin:</label><br>
+  <input type="text" id="virgin" name="virgin"><br>
+  <label for="prostitution_legal">Prostitution Legal:</label><br>
+  <input type="text" id="prostitution_legal" name="prostitution_legal"><br>
+  <label for="pay_for_sex">Pay For Sex:</label><br>
+  <input type="text" id="pay_for_sex" name="pay_for_sex"><br>
+  <label for="friends">Friends:</label><br>
+  <input type="text" id="friends" name="friends"><br>
+  <label for="social_fear">Social Fear:</label><br>
+  <input type="text" id="social_fear" name="social_fear"><br>
+  <label for="depressed">Depressed:</label><br>
+  <input type="text" id="depressed" name="depressed"><br>
+  <label for="what_help_from_others">What Help From Others:</label><br>
+  <input type="text" id="what_help_from_others" name="what_help_from_others"><br>
+  <label for="employment">Employment:</label><br>
+  <input type="text" id="employment" name="employment"><br>
+  <label for="job_title">Job Title:</label><br>
+  <input type="text" id="job_title" name="job_title"><br>
+  <label for="edu_level">Education Level:</label><br>
+  <input type="text" id="edu_level" name="edu_level"><br>
+  <label for="improve_yourself_how">Improve Yourself How:</label><br>
+  <input type="text" id="improve_yourself_how" name="improve_yourself_how"><br>
+  <input type="submit" value="Submit">
+</form>
+      
+      </body>
+    </head>
+</html>

@@ -1,0 +1,1419 @@
+(base) ]0;~/WEBSITE[01;34m~/WEBSITE[00m$ python3 -m pip install -r requirements.txt[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1P[1P[1P[1P[1P requirements.txt[1Prequirements.txt[1Pequirements.txt[1Pquirements.txt[1Puirements.txt[1Pirements.txt[1Prements.txt[1Pements.txt[1Pments.txt[1Pents.txt[1Pnts.txt[1Pts.txt[1Ps.txt[1P.txt[1Ptxt[1Pxt[1Pt[Kcd /app[K[K[K[K[K[K[K>[Kcd FLASK WEBSITE/app
+bash: cd: too many arguments
+(base) ]0;~/WEBSITE[01;34m~/WEBSITE[00m$ cd FLASK WEBSITE
+bash: cd: too many arguments
+(base) ]0;~/WEBSITE[01;34m~/WEBSITE[00m$ cd >FLASK WEBSITE[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd FLASK WEBSITE[1P WEBSITE[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K F;ASK [K[K[K[K[KLASKWEBSITE
+(base) ]0;~/WEBSITE/FLASKWEBSITE[01;34m~/WEBSITE/FLASKWEBSITE[00m$ cd app
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 -m pip install -r requirements.txt
+Collecting Flask==1.1.4
+  Downloading Flask-1.1.4-py2.py3-none-any.whl (94 kB)
+[?25l[K     |███▌                            | 10 kB 12.3 MB/s eta 0:00:01[K     |███████                         | 20 kB 18.4 MB/s eta 0:00:01[K     |██████████▍                     | 30 kB 22.1 MB/s eta 0:00:01[K     |█████████████▉                  | 40 kB 25.8 MB/s eta 0:00:01[K     |█████████████████▎              | 51 kB 20.7 MB/s eta 0:00:01[K     |████████████████████▉           | 61 kB 23.2 MB/s eta 0:00:01[K     |████████████████████████▎       | 71 kB 21.9 MB/s eta 0:00:01[K     |███████████████████████████▊    | 81 kB 23.3 MB/s eta 0:00:01[K     |███████████████████████████████▏| 92 kB 24.2 MB/s eta 0:00:01[K     |████████████████████████████████| 94 kB 4.9 MB/s 
+[?25hCollecting gunicorn==20.1.0
+  Downloading gunicorn-20.1.0-py3-none-any.whl (79 kB)
+[?25l[K     |████▏                           | 10 kB 32.8 MB/s eta 0:00:01[K     |████████▎                       | 20 kB 34.4 MB/s eta 0:00:01[K     |████████████▍                   | 30 kB 41.1 MB/s eta 0:00:01[K     |████████████████▌               | 40 kB 45.5 MB/s eta 0:00:01[K     |████████████████████▋           | 51 kB 46.1 MB/s eta 0:00:01[K     |████████████████████████▊       | 61 kB 49.2 MB/s eta 0:00:01[K     |████████████████████████████▉   | 71 kB 48.8 MB/s eta 0:00:01[K     |████████████████████████████████| 79 kB 12.9 MB/s 
+[?25hCollecting uvicorn==0.17.6
+  Downloading uvicorn-0.17.6-py3-none-any.whl (53 kB)
+[?25l[K     |██████▏                         | 10 kB 15.7 MB/s eta 0:00:01[K     |████████████▎                   | 20 kB 16.1 MB/s eta 0:00:01[K     |██████████████████▍             | 30 kB 17.0 MB/s eta 0:00:01[K     |████████████████████████▌       | 40 kB 17.4 MB/s eta 0:00:01[K     |██████████████████████████████▋ | 51 kB 17.7 MB/s eta 0:00:01[K     |████████████████████████████████| 53 kB 3.4 MB/s 
+[?25hCollecting markupsafe==2.0.1
+  Downloading MarkupSafe-2.0.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (30 kB)
+Collecting Werkzeug<2.0,>=0.15
+  Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+[?25l[K     |█                               | 10 kB 13.9 MB/s eta 0:00:01[K     |██▏                             | 20 kB 15.7 MB/s eta 0:00:01[K     |███▎                            | 30 kB 16.9 MB/s eta 0:00:01[K     |████▍                           | 40 kB 19.3 MB/s eta 0:00:01[K     |█████▌                          | 51 kB 21.2 MB/s eta 0:00:01[K     |██████▋                         | 61 kB 23.2 MB/s eta 0:00:01[K     |███████▊                        | 71 kB 25.3 MB/s eta 0:00:01[K     |████████▉                       | 81 kB 26.5 MB/s eta 0:00:01[K     |█████████▉                      | 92 kB 28.4 MB/s eta 0:00:01[K     |███████████                     | 102 kB 29.3 MB/s eta 0:00:01[K     |████████████                    | 112 kB 29.3 MB/s eta 0:00:01[K     |█████████████▏                  | 122 kB 29.3 MB/s eta 0:00:01[K     |██████████████▎                 | 133 kB 29.3 MB/s eta 0:00:01[K     |███████████████▍                | 143 kB 29.3 MB/s eta 0:00:01[K     |████████████████▌               | 153 kB 29.3 MB/s eta 0:00:01[K     |█████████████████▋              | 163 kB 29.3 MB/s eta 0:00:01[K     |██████████████████▋             | 174 kB 29.3 MB/s eta 0:00:01[K     |███████████████████▊            | 184 kB 29.3 MB/s eta 0:00:01[K     |████████████████████▉           | 194 kB 29.3 MB/s eta 0:00:01[K     |██████████████████████          | 204 kB 29.3 MB/s eta 0:00:01[K     |███████████████████████         | 215 kB 29.3 MB/s eta 0:00:01[K     |████████████████████████▏       | 225 kB 29.3 MB/s eta 0:00:01[K     |█████████████████████████▎      | 235 kB 29.3 MB/s eta 0:00:01[K     |██████████████████████████▍     | 245 kB 29.3 MB/s eta 0:00:01[K     |███████████████████████████▍    | 256 kB 29.3 MB/s eta 0:00:01[K     |████████████████████████████▌   | 266 kB 29.3 MB/s eta 0:00:01[K     |█████████████████████████████▋  | 276 kB 29.3 MB/s eta 0:00:01[K     |██████████████████████████████▊ | 286 kB 29.3 MB/s eta 0:00:01[K     |███████████████████████████████▉| 296 kB 29.3 MB/s eta 0:00:01[K     |████████████████████████████████| 298 kB 29.3 MB/s 
+[?25hCollecting click<8.0,>=5.1
+  Downloading click-7.1.2-py2.py3-none-any.whl (82 kB)
+[?25l[K     |████                            | 10 kB 19.4 MB/s eta 0:00:01[K     |████████                        | 20 kB 21.6 MB/s eta 0:00:01[K     |███████████▉                    | 30 kB 24.7 MB/s eta 0:00:01[K     |███████████████▉                | 40 kB 26.5 MB/s eta 0:00:01[K     |███████████████████▉            | 51 kB 25.9 MB/s eta 0:00:01[K     |███████████████████████▊        | 61 kB 28.6 MB/s eta 0:00:01[K     |███████████████████████████▊    | 71 kB 28.4 MB/s eta 0:00:01[K     |███████████████████████████████▊| 81 kB 29.6 MB/s eta 0:00:01[K     |████████████████████████████████| 82 kB 1.7 MB/s 
+[?25hCollecting Jinja2<3.0,>=2.10.1
+  Downloading Jinja2-2.11.3-py2.py3-none-any.whl (125 kB)
+[?25l[K     |██▋                             | 10 kB 16.0 MB/s eta 0:00:01[K     |█████▏                          | 20 kB 24.2 MB/s eta 0:00:01[K     |███████▉                        | 30 kB 25.8 MB/s eta 0:00:01[K     |██████████▍                     | 40 kB 25.7 MB/s eta 0:00:01[K     |█████████████                   | 51 kB 27.2 MB/s eta 0:00:01[K     |███████████████▋                | 61 kB 28.7 MB/s eta 0:00:01[K     |██████████████████▎             | 71 kB 29.5 MB/s eta 0:00:01[K     |████████████████████▉           | 81 kB 28.8 MB/s eta 0:00:01[K     |███████████████████████▌        | 92 kB 29.6 MB/s eta 0:00:01[K     |██████████████████████████      | 102 kB 30.2 MB/s eta 0:00:01[K     |████████████████████████████▊   | 112 kB 30.2 MB/s eta 0:00:01[K     |███████████████████████████████▎| 122 kB 30.2 MB/s eta 0:00:01[K     |████████████████████████████████| 125 kB 30.2 MB/s 
+[?25hCollecting itsdangerous<2.0,>=0.24
+  Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+Requirement already satisfied: setuptools>=3.0 in /projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/lib/python3.9/site-packages (from gunicorn==20.1.0->-r requirements.txt (line 2)) (61.2.0)
+Collecting h11>=0.8
+  Downloading h11-0.13.0-py3-none-any.whl (58 kB)
+[?25l[K     |█████▋                          | 10 kB 15.7 MB/s eta 0:00:01[K     |███████████▎                    | 20 kB 24.2 MB/s eta 0:00:01[K     |█████████████████               | 30 kB 26.8 MB/s eta 0:00:01[K     |██████████████████████▌         | 40 kB 31.5 MB/s eta 0:00:01[K     |████████████████████████████▏   | 51 kB 35.4 MB/s eta 0:00:01[K     |████████████████████████████████| 58 kB 7.3 MB/s 
+[?25hCollecting asgiref>=3.4.0
+  Downloading asgiref-3.5.2-py3-none-any.whl (22 kB)
+Installing collected packages: markupsafe, Werkzeug, Jinja2, itsdangerous, h11, click, asgiref, uvicorn, gunicorn, Flask
+  Attempting uninstall: markupsafe
+    Found existing installation: MarkupSafe 2.1.1
+    Uninstalling MarkupSafe-2.1.1:
+      Successfully uninstalled MarkupSafe-2.1.1
+  Attempting uninstall: Jinja2
+    Found existing installation: Jinja2 3.1.2
+    Uninstalling Jinja2-3.1.2:
+      Successfully uninstalled Jinja2-3.1.2
+[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+nbconvert 6.5.0 requires jinja2>=3.0, but you have jinja2 2.11.3 which is incompatible.[0m
+Successfully installed Flask-1.1.4 Jinja2-2.11.3 Werkzeug-1.0.1 asgiref-3.5.2 click-7.1.2 gunicorn-20.1.0 h11-0.13.0 itsdangerous-1.1.0 markupsafe-2.0.1 uvicorn-0.17.6
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 -m main
+Try to open
+
+    https://https://cocalc2.ai-camp.dev//803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Serving Flask app "main" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on http://0.0.0.0:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev//803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+127.0.0.1 - - [24/Aug/2022 15:13:09] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:09] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/css/styles.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:09] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/LinearExplanation.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:09] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/all_correlation_map.html HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:09] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/GDP%20scatterplots.html HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:09] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/crucial_features_heatmap.html HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:09] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/LinearRegressionCF.html HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:09] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/NeuralNetworkCF_matrix.html HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:09] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/KNN_CF_matrix.html HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:10] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/nn_explanation.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:10] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/knn_explanation.jpeg HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:10] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/rohan_img.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:11] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/mitchell_img.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:11] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/alex_duffy_img.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:11] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/cameron_jackson_img.jfif HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:13] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/assets/favicon.ico HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:14] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:15] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/css/styles.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:15] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/LinearExplanation.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:15] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/all_correlation_map.html HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:15] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/GDP%20scatterplots.html HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:15] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/crucial_features_heatmap.html HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:15] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/LinearRegressionCF.html HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:15] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/NeuralNetworkCF_matrix.html HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:15] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/KNN_CF_matrix.html HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:17] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/nn_explanation.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:17] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/knn_explanation.jpeg HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:17] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/rohan_img.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:17] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/alex_duffy_img.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:17] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/mitchell_img.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:17] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/cameron_jackson_img.jfif HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2022 15:13:25] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/assets/favicon.ico HTTP/1.1[0m" 200 -
+(base) ]0;~/WEBSITE[01;34m~/WEBSITE[00m$ oyt[K[K[Kpython 3[K[K3 main.py
+python3: can't open file '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/main.py': [Errno 2] No such file or directory
+(base) ]0;~/WEBSITE[01;34m~/WEBSITE[00m$ cd app
+bash: cd: app: No such file or directory
+(base) ]0;~/WEBSITE[01;34m~/WEBSITE[00m$ cd FLASK [KPROJECT
+bash: cd: FLASKPROJECT: No such file or directory
+(base) ]0;~/WEBSITE[01;34m~/WEBSITE[00m$ cd FLAKS[K[KSKWEBSTE[K[K[KIT[K[KSITE
+(base) ]0;~/WEBSITE/FLASKWEBSITE[01;34m~/WEBSITE/FLASKWEBSITE[00m$ cs ap[K[K[K[Kd app
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Serving Flask app "main" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on http://0.0.0.0:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+127.0.0.1 - - [25/Aug/2022 15:45:49] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 15:45:49] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/css/styles.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 15:45:49] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/LinearExplanation.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 15:45:50] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/knn_explanation.jpeg HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 15:45:50] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/nn_explanation.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 15:45:50] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/rohan_img.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 15:45:50] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/all_correlation_map.html HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 15:45:50] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/GDP%20scatterplots.html HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 15:45:50] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/crucial_features_heatmap.html HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 15:45:50] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/LinearRegressionCF.html HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 15:45:50] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/NeuralNetworkCF_matrix.html HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 15:45:50] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/KNN_CF_matrix.html HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 15:45:50] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/alex_duffy_img.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 15:45:51] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/mitchell_img.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 15:45:51] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/static/images/cameron_jackson_img.jfif HTTP/1.1[0m" 200 -
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 9, in <module>
+    url_for('static', filename='style.css')
+NameError: name 'url_for' is not defined
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ [K(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ [K(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 49
+    def home():
+    ^
+SyntaxError: invalid syntax
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 10, in <module>
+    url_for('static', filename='style.css')
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/lib/python3.9/site-packages/flask/helpers.py", line 306, in url_for
+    raise RuntimeError(
+RuntimeError: Attempted to generate a URL without the application context being pushed. This has to be executed when application context is available.
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+ * Serving Flask app "main" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+^CTraceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 74, in <module>
+    print(f'Try to open\n\n    https://{website_url}' + base_url + '\n\n')
+TypeError: can only concatenate str (not "function") to str
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 74, in <module>
+    print(f'Try to open\n\n    https://{website_url}' + base_url + '\n\n')
+TypeError: can only concatenate str (not "function") to str
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 67, in <module>
+    print(f'Try to open\n\n    https://{website_url}' + base_url + '\n\n')
+TypeError: can only concatenate str (not "function") to str
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Serving Flask app "main" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on http://0.0.0.0:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+127.0.0.1 - - [25/Aug/2022 18:15:22] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 200 -
+^C(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ 
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 65, in <module>
+    print(f'Try to open\n\n    https://{website_url}' + base_url + '\n\n')
+TypeError: can only concatenate str (not "function") to str
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Serving Flask app "main" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on http://0.0.0.0:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+127.0.0.1 - - [25/Aug/2022 18:16:21] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 18:16:31] "[31m[1mPOST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 405 -
+127.0.0.1 - - [25/Aug/2022 18:16:39] "[31m[1mPOST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 405 -
+^C(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ 
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 60
+    define additional routes here
+           ^
+SyntaxError: invalid syntax
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Serving Flask app "main" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on http://0.0.0.0:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+127.0.0.1 - - [25/Aug/2022 18:20:43] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 200 -
+The results are  <generator object MultiDict.values at 0x7f324275aeb0>
+127.0.0.1 - - [25/Aug/2022 18:20:54] "[37mPOST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 200 -
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+127.0.0.1 - - [25/Aug/2022 18:21:33] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 18:21:45] "[35m[1mPOST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/lib/python3.9/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/lib/python3.9/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/lib/python3.9/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 52, in main
+    result = request.form.values([thing for thing in result])
+UnboundLocalError: local variable 'result' referenced before assignment
+127.0.0.1 - - [25/Aug/2022 18:21:45] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 18:21:45] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 18:21:45] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 18:21:45] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 18:21:45] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2022 18:21:45] "[37mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 750-520-762
+The results are  ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1']
+127.0.0.1 - - [25/Aug/2022 18:22:09] "[37mPOST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 200 -
+The results are  ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '11', '1', '1', '1', '1']
+127.0.0.1 - - [25/Aug/2022 18:22:31] "[37mPOST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 200 -
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 16, in <module>
+    pickle.load(open(filename, 'rb'))
+NameError: name 'pickle' is not defined
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 19, in <module>
+    loaded_model = pickle.load(open(model, 'rb'))
+NameError: name 'model' is not defined
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 19, in <module>
+    loaded_model = pickle.load(open(filename, 'rb'))
+ModuleNotFoundError: No module named 'sklearn'
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 19, in <module>
+    loaded_model = pickle.load(open(filename, 'rb'))
+ModuleNotFoundError: No module named 'sklearn'
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 5, in <module>
+    import sklearn
+ModuleNotFoundError: No module named 'sklearn'
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ conda activate ds_env
+(ds_env) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ conda activate ds_env[6Ppython3 main.py
+Traceback (most recent call last):
+  File "main.py", line 2, in <module>
+    from flask import Flask, render_template, request
+ModuleNotFoundError: No module named 'flask'
+(ds_env) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ $ pip install -U Flask
+bash: $: command not found
+(ds_env) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ $ pip install -U Flask[1P
+Collecting Flask
+  Downloading Flask-2.2.2-py3-none-any.whl (101 kB)
+[?25l[K     |███▎                            | 10 kB 16.1 MB/s eta 0:00:01[K     |██████▌                         | 20 kB 14.7 MB/s eta 0:00:01[K     |█████████▊                      | 30 kB 16.8 MB/s eta 0:00:01[K     |█████████████                   | 40 kB 17.6 MB/s eta 0:00:01[K     |████████████████▏               | 51 kB 18.0 MB/s eta 0:00:01[K     |███████████████████▍            | 61 kB 18.6 MB/s eta 0:00:01[K     |██████████████████████▋         | 71 kB 18.3 MB/s eta 0:00:01[K     |█████████████████████████▉      | 81 kB 18.7 MB/s eta 0:00:01[K     |█████████████████████████████   | 92 kB 19.9 MB/s eta 0:00:01[K     |████████████████████████████████| 101 kB 8.2 MB/s 
+[?25hCollecting click>=8.0
+  Downloading click-8.1.3-py3-none-any.whl (96 kB)
+[?25l[K     |███▍                            | 10 kB 23.4 MB/s eta 0:00:01[K     |██████▉                         | 20 kB 31.4 MB/s eta 0:00:01[K     |██████████▏                     | 30 kB 34.3 MB/s eta 0:00:01[K     |█████████████▋                  | 40 kB 37.9 MB/s eta 0:00:01[K     |█████████████████               | 51 kB 38.6 MB/s eta 0:00:01[K     |████████████████████▍           | 61 kB 41.2 MB/s eta 0:00:01[K     |███████████████████████▊        | 71 kB 41.1 MB/s eta 0:00:01[K     |███████████████████████████▏    | 81 kB 41.2 MB/s eta 0:00:01[K     |██████████████████████████████▌ | 92 kB 43.0 MB/s eta 0:00:01[K     |████████████████████████████████| 96 kB 6.4 MB/s 
+[?25hRequirement already satisfied: Jinja2>=3.0 in /projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages (from Flask) (3.0.3)
+Collecting itsdangerous>=2.0
+  Downloading itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+Collecting Werkzeug>=2.2.2
+  Downloading Werkzeug-2.2.2-py3-none-any.whl (232 kB)
+[?25l[K     |█▍                              | 10 kB 28.2 MB/s eta 0:00:01[K     |██▉                             | 20 kB 34.8 MB/s eta 0:00:01[K     |████▎                           | 30 kB 41.6 MB/s eta 0:00:01[K     |█████▋                          | 40 kB 44.6 MB/s eta 0:00:01[K     |███████                         | 51 kB 47.2 MB/s eta 0:00:01[K     |████████▌                       | 61 kB 50.3 MB/s eta 0:00:01[K     |█████████▉                      | 71 kB 51.1 MB/s eta 0:00:01[K     |███████████▎                    | 81 kB 52.4 MB/s eta 0:00:01[K     |████████████▊                   | 92 kB 54.2 MB/s eta 0:00:01[K     |██████████████                  | 102 kB 55.3 MB/s eta 0:00:01[K     |███████████████▌                | 112 kB 55.3 MB/s eta 0:00:01[K     |█████████████████               | 122 kB 55.3 MB/s eta 0:00:01[K     |██████████████████▎             | 133 kB 55.3 MB/s eta 0:00:01[K     |███████████████████▊            | 143 kB 55.3 MB/s eta 0:00:01[K     |█████████████████████▏          | 153 kB 55.3 MB/s eta 0:00:01[K     |██████████████████████▌         | 163 kB 55.3 MB/s eta 0:00:01[K     |████████████████████████        | 174 kB 55.3 MB/s eta 0:00:01[K     |█████████████████████████▍      | 184 kB 55.3 MB/s eta 0:00:01[K     |██████████████████████████▊     | 194 kB 55.3 MB/s eta 0:00:01[K     |████████████████████████████▏   | 204 kB 55.3 MB/s eta 0:00:01[K     |█████████████████████████████▋  | 215 kB 55.3 MB/s eta 0:00:01[K     |███████████████████████████████ | 225 kB 55.3 MB/s eta 0:00:01[K     |████████████████████████████████| 232 kB 55.3 MB/s 
+[?25hCollecting importlib-metadata>=3.6.0
+  Downloading importlib_metadata-4.12.0-py3-none-any.whl (21 kB)
+Requirement already satisfied: zipp>=0.5 in /projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages (from importlib-metadata>=3.6.0->Flask) (3.8.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages (from Jinja2>=3.0->Flask) (2.1.1)
+Installing collected packages: Werkzeug, itsdangerous, importlib-metadata, click, Flask
+Successfully installed Flask-2.2.2 Werkzeug-2.2.2 click-8.1.3 importlib-metadata-4.12.0 itsdangerous-2.1.2
+(ds_env) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$  pip install -U Flask[1@$[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Ppython3 main.pyconda activate ds_env[6Ppython3 main.py
+Traceback (most recent call last):
+  File "main.py", line 36, in <module>
+    app = Flask(__suicide_risk__, static_url_path=base_url+'static')
+NameError: name '__suicide_risk__' is not defined
+(ds_env) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+Traceback (most recent call last):
+  File "main.py", line 43, in <module>
+    @app.route(f'{base_url}')
+NameError: name 'app' is not defined
+(ds_env) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+Traceback (most recent call last):
+  File "main.py", line 36, in <module>
+    app = Flask(__suicide_risk__, static_url_path=base_url+'static')
+NameError: name '__suicide_risk__' is not defined
+(ds_env) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Serving Flask app 'main'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:12345
+ * Running on http://172.17.0.2:12345
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 441-295-383
+127.0.0.1 - - [25/Aug/2022 18:45:38] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 18:45:39] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [25/Aug/2022 18:45:39] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/assets/favicon.ico HTTP/1.1[0m" 404 -
+The results are  ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1']
+127.0.0.1 - - [25/Aug/2022 18:45:57] "[35m[1mPOST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 56, in main
+    predictions = loaded_model.predict(results.reshape(1,-1))
+NameError: name 'results' is not defined
+127.0.0.1 - - [25/Aug/2022 18:45:57] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 18:45:57] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 18:45:57] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 18:45:57] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 137-617-469
+127.0.0.1 - - [25/Aug/2022 18:46:10] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 18:46:10] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+The results are  ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '11', '1', '1', '1']
+127.0.0.1 - - [25/Aug/2022 18:46:25] "[35m[1mPOST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 56, in main
+    predictions = loaded_model.predict(result.reshape(1,-1))
+AttributeError: 'list' object has no attribute 'reshape'
+127.0.0.1 - - [25/Aug/2022 18:46:25] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [25/Aug/2022 18:46:25] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [25/Aug/2022 18:46:25] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [25/Aug/2022 18:46:25] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 767-136-940
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 695-029-563
+127.0.0.1 - - [25/Aug/2022 18:46:57] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 18:46:57] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+The results are  ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1']
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+127.0.0.1 - - [25/Aug/2022 18:47:05] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 18:47:06] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 144-550-974
+127.0.0.1 - - [25/Aug/2022 18:47:41] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 18:47:41] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo [0]
+127.0.0.1 - - [25/Aug/2022 18:47:55] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 18:47:55] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 61
+    print("the predicctio isssss brooo",predictions)
+    ^
+IndentationError: expected an indented block
+(ds_env) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Serving Flask app 'main'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:12345
+ * Running on http://172.17.0.2:12345
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 584-790-630
+127.0.0.1 - - [25/Aug/2022 18:49:37] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 18:49:37] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo 0
+127.0.0.1 - - [25/Aug/2022 18:49:47] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 18:49:48] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 115-450-097
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [25/Aug/2022 18:50:43] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 18:50:43] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 636-403-051
+127.0.0.1 - - [25/Aug/2022 18:53:00] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 18:53:00] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [25/Aug/2022 18:53:09] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 18:53:09] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [25/Aug/2022 18:53:57] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 18:53:57] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [25/Aug/2022 18:59:22] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 18:59:22] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [25/Aug/2022 18:59:30] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 18:59:30] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [25/Aug/2022 18:59:33] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 18:59:33] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [25/Aug/2022 18:59:33] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/assets/favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [25/Aug/2022 19:03:53] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 19:03:53] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [25/Aug/2022 19:09:38] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 19:09:38] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [25/Aug/2022 19:09:39] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/assets/favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [25/Aug/2022 19:10:12] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 19:10:12] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [25/Aug/2022 19:11:01] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 19:11:01] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [25/Aug/2022 19:13:04] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 19:13:04] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [25/Aug/2022 19:13:13] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 19:13:13] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [25/Aug/2022 19:13:24] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 19:13:24] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [25/Aug/2022 19:13:40] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 19:15:47] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 19:15:47] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [25/Aug/2022 19:15:50] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 19:15:50] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+127.0.0.1 - - [25/Aug/2022 19:17:43] "[35m[1mPOST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 58, in main
+    predictions = loaded_model.predict(result.reshape(1,-1))[0]
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 832, in predict
+    proba = self.predict_proba(X)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 874, in predict_proba
+    X = self._validate_X_predict(X)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 605, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py", line 577, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/utils/validation.py", line 856, in check_array
+    array = np.asarray(array, order=order, dtype=dtype)
+ValueError: could not convert string to float: ''
+127.0.0.1 - - [25/Aug/2022 19:17:43] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 19:17:43] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 19:17:43] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 19:17:44] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [25/Aug/2022 19:17:45] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+127.0.0.1 - - [25/Aug/2022 19:17:47] "[35m[1mPOST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 58, in main
+    predictions = loaded_model.predict(result.reshape(1,-1))[0]
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 832, in predict
+    proba = self.predict_proba(X)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 874, in predict_proba
+    X = self._validate_X_predict(X)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 605, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py", line 577, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/utils/validation.py", line 856, in check_array
+    array = np.asarray(array, order=order, dtype=dtype)
+ValueError: could not convert string to float: ''
+127.0.0.1 - - [25/Aug/2022 19:17:48] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [25/Aug/2022 19:17:48] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [25/Aug/2022 19:17:48] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [25/Aug/2022 19:17:48] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [25/Aug/2022 19:18:05] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 19:18:06] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+(base) ]0;~/WEBSITE[01;34m~/WEBSITE[00m$ cd FLASKPROJECT
+bash: cd: FLASKPROJECT: No such file or directory
+(base) ]0;~/WEBSITE[01;34m~/WEBSITE[00m$ CD FLASKPROJECT
+bash: CD: command not found
+(base) ]0;~/WEBSITE[01;34m~/WEBSITE[00m$ FLASKWEBSITE
+bash: FLASKWEBSITE: command not found
+(base) ]0;~/WEBSITE[01;34m~/WEBSITE[00m$ FL[K[Kcs [Kd[K[Kd FLASKWEBSITE
+(base) ]0;~/WEBSITE/FLASKWEBSITE[01;34m~/WEBSITE/FLASKWEBSITE[00m$ cd app
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 5, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ cd[Konda activate ds_enc
+Could not find conda environment: ds_enc
+You can list all discoverable environments with `conda info --envs`.
+
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ conda activate ds_enc[6Ppython3 main.py
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 5, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+(base) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ conda activate ds_env
+(ds_env) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ conda activate ds_env[6Ppython3 main.pyconda activate ds_enc[6Ppython3 main.py
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Serving Flask app 'main'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:12345
+ * Running on http://172.17.0.2:12345
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 955-046-402
+127.0.0.1 - - [26/Aug/2022 14:08:04] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:08:04] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2022 14:08:05] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/assets/favicon.ico HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:08:19] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:08:19] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:08:36] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:08:36] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2022 14:08:50] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:09:26] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:09:26] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 821-104-732
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 830-333-325
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 105-083-287
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 67
+    return render_template("index.html",classification_text = predictions_text,image)
+                                                                               ^
+SyntaxError: positional argument follows keyword argument
+(ds_env) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Serving Flask app 'main'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:12345
+ * Running on http://172.17.0.2:12345
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 780-998-063
+127.0.0.1 - - [26/Aug/2022 14:38:34] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:38:34] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2022 14:39:43] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:39:43] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2022 14:39:43] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/assets/favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2022 14:39:48] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:39:48] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2022 14:39:55] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:39:55] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+127.0.0.1 - - [26/Aug/2022 14:39:59] "[35m[1mPOST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 59, in main
+    predictions = loaded_model.predict(result.reshape(1,-1))[0]
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 832, in predict
+    proba = self.predict_proba(X)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 874, in predict_proba
+    X = self._validate_X_predict(X)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 605, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py", line 577, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/utils/validation.py", line 856, in check_array
+    array = np.asarray(array, order=order, dtype=dtype)
+ValueError: could not convert string to float: ''
+127.0.0.1 - - [26/Aug/2022 14:39:59] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:40:00] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:40:00] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:40:00] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:40:42] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:40:42] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:41:02] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:41:02] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:41:34] "[35m[1mPOST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 67, in main
+    return render_template("index.html",classification_text = predictions_text,image_flag = test_flag)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/loaders.py", line 137, in load
+    code = environment.compile(source, name, filename)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 757, in compile
+    self.handle_exception(source=source_hint)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/templates/index.html", line 94, in template
+    {{classification_text}}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+127.0.0.1 - - [26/Aug/2022 14:41:34] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:41:34] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:41:34] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:41:34] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:41:45] "[35m[1mPOST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 67, in main
+    return render_template("index.html",classification_text = predictions_text,image_flag = test_flag)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/loaders.py", line 137, in load
+    code = environment.compile(source, name, filename)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 757, in compile
+    self.handle_exception(source=source_hint)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/templates/index.html", line 94, in template
+    {{classification_text}}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+127.0.0.1 - - [26/Aug/2022 14:41:45] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:41:45] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:41:45] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:41:45] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:41:54] "[35m[1mPOST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 67, in main
+    return render_template("index.html",classification_text = predictions_text,image_flag = test_flag)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/loaders.py", line 137, in load
+    code = environment.compile(source, name, filename)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 757, in compile
+    self.handle_exception(source=source_hint)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/templates/index.html", line 94, in template
+    {{classification_text}}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+127.0.0.1 - - [26/Aug/2022 14:41:54] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:41:54] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:41:54] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:41:54] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:41:57] "[35m[1mPOST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 67, in main
+    return render_template("index.html",classification_text = predictions_text,image_flag = test_flag)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/loaders.py", line 137, in load
+    code = environment.compile(source, name, filename)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 757, in compile
+    self.handle_exception(source=source_hint)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/templates/index.html", line 94, in template
+    {{classification_text}}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+127.0.0.1 - - [26/Aug/2022 14:41:57] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:41:57] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:41:57] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:41:57] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:42:08] "[35m[1mPOST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 67, in main
+    return render_template("index.html",classification_text = predictions_text,image_flag = test_flag)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/loaders.py", line 137, in load
+    code = environment.compile(source, name, filename)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 757, in compile
+    self.handle_exception(source=source_hint)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/templates/index.html", line 94, in template
+    {{classification_text}}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+127.0.0.1 - - [26/Aug/2022 14:42:08] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:42:08] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:42:08] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:42:08] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:42:13] "[35m[1mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 46, in home
+    return render_template('index.html')
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/loaders.py", line 137, in load
+    code = environment.compile(source, name, filename)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 757, in compile
+    self.handle_exception(source=source_hint)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/templates/index.html", line 95, in template
+    {%end if}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'end'. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+127.0.0.1 - - [26/Aug/2022 14:42:13] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:42:13] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:42:13] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:42:13] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:42:17] "[35m[1mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 46, in home
+    return render_template('index.html')
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/loaders.py", line 137, in load
+    code = environment.compile(source, name, filename)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 757, in compile
+    self.handle_exception(source=source_hint)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/templates/index.html", line 95, in template
+    {%end if}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'end'. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+127.0.0.1 - - [26/Aug/2022 14:42:17] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:42:17] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:42:17] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:42:17] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:42:20] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:42:20] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2022 14:42:24] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:42:24] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:42:40] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:42:40] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:43:04] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:43:04] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2022 14:43:18] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:43:18] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+127.0.0.1 - - [26/Aug/2022 14:43:21] "[35m[1mPOST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 59, in main
+    predictions = loaded_model.predict(result.reshape(1,-1))[0]
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 832, in predict
+    proba = self.predict_proba(X)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 874, in predict_proba
+    X = self._validate_X_predict(X)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 605, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py", line 577, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/utils/validation.py", line 856, in check_array
+    array = np.asarray(array, order=order, dtype=dtype)
+ValueError: could not convert string to float: ''
+127.0.0.1 - - [26/Aug/2022 14:43:21] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:43:21] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:43:21] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 14:43:22] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:43:32] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:43:33] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 118-546-448
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:44:04] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:44:04] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:44:15] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:44:15] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:44:59] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:44:59] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:45:05] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:45:06] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:45:10] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:45:10] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2022 14:45:11] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/assets/favicon.ico HTTP/1.1[0m" 404 -
+ * Detected change in '/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py', reloading
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 708-320-055
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:45:47] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:45:47] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:46:11] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:46:11] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+^C(ds_env) ]0;~/WEBSITE/FLASKWEBSITE/app[01;34m~/WEBSITE/FLASKWEBSITE/app[00m$ python3 main.py
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Serving Flask app 'main'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:12345
+ * Running on http://172.17.0.2:12345
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+Try to open
+
+    https://https://cocalc2.ai-camp.dev/803caf18-2f52-4012-a187-684798bd4465/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 919-533-505
+127.0.0.1 - - [26/Aug/2022 14:46:48] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:46:48] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 14:47:03] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:47:03] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2022 14:50:57] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:50:57] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2022 14:50:58] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/assets/favicon.ico HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+127.0.0.1 - - [26/Aug/2022 14:52:49] "[35m[1mPOST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/WEBSITE/FLASKWEBSITE/app/main.py", line 60, in main
+    predictions = loaded_model.predict(result.reshape(1,-1))[0]
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 832, in predict
+    proba = self.predict_proba(X)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 874, in predict_proba
+    X = self._validate_X_predict(X)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 605, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py", line 577, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/utils/validation.py", line 856, in check_array
+    array = np.asarray(array, order=order, dtype=dtype)
+ValueError: could not convert string to float: 'female'
+127.0.0.1 - - [26/Aug/2022 14:52:50] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:52:50] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:52:50] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 14:52:50] "[36mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [26/Aug/2022 15:08:39] "GET /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 15:08:40] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 15:09:32] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 15:09:32] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
+/projects/803caf18-2f52-4012-a187-684798bd4465/miniconda3/envs/ds_env/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+the predicctio isssss brooo <class 'numpy.int64'>
+127.0.0.1 - - [26/Aug/2022 15:10:15] "POST /803caf18-2f52-4012-a187-684798bd4465/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2022 15:10:15] "[33mGET /803caf18-2f52-4012-a187-684798bd4465/port/12345/css/styles.css HTTP/1.1[0m" 404 -
